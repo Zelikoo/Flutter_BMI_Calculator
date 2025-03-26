@@ -17,7 +17,7 @@ class ResultsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('BMI CALCULATOR')),
+      appBar: AppBar(title: Text('Calculateur d\'IMC')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -25,7 +25,7 @@ class ResultsPage extends StatelessWidget {
           Expanded(
             child: Container(
               padding: EdgeInsets.all(15.0),
-              child: Text('Your Result', style: kTitleTextStyle),
+              child: Text('Resultat', style: kTitleTextStyle),
             ),
           ),
           Expanded(
@@ -54,7 +54,7 @@ class ResultsPage extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
             },
-            buttonTitle: 'RE-CALCULATE',
+            buttonTitle: 'RECALCULER',
           ),
         ],
       ),
