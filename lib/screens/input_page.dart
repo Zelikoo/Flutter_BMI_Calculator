@@ -26,7 +26,7 @@ class InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('BMI CALCULATOR')),
+      appBar: AppBar(title: Text('Calculateur d\'IMC')),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -46,7 +46,7 @@ class InputPageState extends State<InputPage> {
                             : kInactiveCardColour,
                     cardChild: IconContent(
                       icon: FontAwesomeIcons.mars,
-                      label: 'MALE',
+                      label: 'HOMME',
                     ),
                   ),
                 ),
@@ -63,7 +63,7 @@ class InputPageState extends State<InputPage> {
                             : kInactiveCardColour,
                     cardChild: IconContent(
                       icon: FontAwesomeIcons.venus,
-                      label: 'FEMALE',
+                      label: 'FEMME',
                     ),
                   ),
                 ),
@@ -76,7 +76,7 @@ class InputPageState extends State<InputPage> {
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('HEIGHT', style: kLabelTextStyle),
+                  Text('TAILLE', style: kLabelTextStyle),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -123,7 +123,7 @@ class InputPageState extends State<InputPage> {
                     cardChild: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('WEIGHT', style: kLabelTextStyle),
+                        Text('POID', style: kLabelTextStyle),
                         Text(weight.toString(), style: kNumberTextStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -189,7 +189,7 @@ class InputPageState extends State<InputPage> {
             ),
           ),
           BottomButton(
-            buttonTitle: 'CALCULATE',
+            buttonTitle: 'CALCULER',
             onTap: () {
               CalculatorBrain calc = CalculatorBrain(
                 height: height,
